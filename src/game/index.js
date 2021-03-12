@@ -11,7 +11,7 @@ import {
   Header,
   Title,
   Content,
-  Icons,
+  Icon,
   LikeBox,
   IconsBox,
   ButtonLike,
@@ -52,9 +52,9 @@ const Game = () => {
               <p>1</p>
             </ButtonDislike>
           </LikeBox>
-          <Icons>
+          <Icon showGame={showGame}>
             <AiOutlineFullscreen onClick={handle.enter} />
-          </Icons>
+          </Icon>
         </IconsBox>
       </Header>
       <Content>

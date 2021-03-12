@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-	box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   flex-direction: column;
   user-select: none;
@@ -13,15 +13,15 @@ export const Header = styled.div`
   box-sizing: border-box;
   align-items: center;
   width: 100%;
-	height: 55px;
+  height: 55px;
   justify-content: space-between;
   padding: 10px;
   background-color: #131521;
-	color: #aeb2bc;
+  color: #aeb2bc;
 `;
 export const Title = styled.h2`
   display: flex;
-	align-items: center;
+  align-items: center;
   padding: 10px;
   margin: 0;
   margin-right: 10px;
@@ -33,7 +33,7 @@ export const Content = styled.div`
   flex-direction: column;
   border: 10px solid #131521;
   border-width: 0px 10px 10px 10px;
-	box-sizing: border-box;
+  box-sizing: border-box;
   overflow: hidden;
   .button {
     position: absolute;
@@ -54,8 +54,8 @@ export const Content = styled.div`
     }
   }
 `;
-export const Icons = styled.div`
-  display: flex;
+export const Icon = styled.div`
+  display: ${({ showGame }) => (showGame ? "flex" : "none")};
   align-items: center;
   svg {
     width: var(--size);

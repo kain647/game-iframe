@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Clock from "./clock"
+import Clock from "./clock";
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
 import {
   AiOutlineFullscreen,
@@ -21,12 +21,7 @@ import {
 const ActualGame = props => {
   const { width, height, url } = props;
   return (
-    <iframe
-      style={{ border: "0" }}
-      width={width}
-      height={height}
-      src={url}
-    />
+    <iframe style={{ border: "0" }} width={width} height={height} src={url} />
   );
 };
 
@@ -39,7 +34,7 @@ const Game = () => {
   return (
     <Container>
       <Header>
-        <Clock/>
+        <Clock />
         <Title>Tap My Water</Title>
         <IconsBox>
           <LikeBox>

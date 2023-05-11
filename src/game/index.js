@@ -28,6 +28,7 @@ const ActualGame = props => {
 const Game = () => {
   const [showGame, setShowGame] = useState(false);
   const [fullScreen, setFullScreen] = useState(false);
+  const [like, dislike] = useState(0);
   const handle = useFullScreenHandle();
   const width = fullScreen ? "100%" : "1280px";
   const height = fullScreen ? "100%" : "720px";
@@ -40,11 +41,11 @@ const Game = () => {
           <LikeBox>
             <ButtonLike>
               <AiOutlineLike />
-              <p>5</p>
+              <p onClick={() => {}}>5</p>
             </ButtonLike>
             <ButtonDislike>
               <AiOutlineDislike />
-              <p>1</p>
+              <p onClick={() => {}}>1</p>
             </ButtonDislike>
           </LikeBox>
           <Icon showGame={showGame}>
